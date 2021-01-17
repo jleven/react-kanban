@@ -11,6 +11,9 @@
     "@babel/react"
   ],
   "env": {
+    "development": {
+      "plugins": ["@codesee/instrument"]
+    },
     "production": {
       "plugins": [
         ["@babel/plugin-transform-runtime", { "useBuiltIns": true }],
